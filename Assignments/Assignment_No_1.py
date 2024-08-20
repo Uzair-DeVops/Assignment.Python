@@ -18,3 +18,5 @@ for x in range(1,6):
     print(x)
 
 print("Amir Bahi , Uziar ")    
+print("minahil baji , Rabia api")
+print("khurram")
