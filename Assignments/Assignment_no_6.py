@@ -4,7 +4,7 @@ def even_checker(num):
     else :
         return "odd"
 def tuple_1(a , b ):
-    list1 : list = []
+    list1 : list = [] 
     b = (b)**2
     list1.append(a)
     list1.append(b)
