@@ -1,3 +1,6 @@
+Here’s the markdown file that explains each step of your code:
+
+---
 
 # Exploring Favorite Numbers
 
@@ -68,8 +71,7 @@ for x in range(1, 4):
 
 ### 6. **Displaying Even/Odd Information**
 ```python
-print(f"Hello, {user_name} Let's explore your favorite numbers:
-")
+print(f"Hello, {user_name} Let's explore your favorite numbers:\n")
 for x in range(3):
     print(f"The number {num_list[x]} is {even_checker(num_list[x])}")
 ```
@@ -96,3 +98,7 @@ else:
     print(f"Great job! {sum(num_list)} number is not a prime number.")
 ```
 - **Purpose**: To check if the sum of the favorite numbers is a prime number and inform the user accordingly.
+
+---
+
+This markdown file should cover all the steps your code goes through! Let me know if you need any more details or changes.
