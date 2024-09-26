@@ -69,55 +69,57 @@
 
 
 
+def databas():
+    student_list = []
+    mini_list = []
+    condition = True
+    Id = 1
+    while condition:
+        user_input = input ("Please enter the student's name (or type 'stop' to finish) : ")
+        if user_input.lower() == "stop":
+            condition = False
+        else:
+            mini_list = []
+            mini_list.append(Id)
+            Id += 1
+            mini_list.append(user_input)
+            tuple1 = tuple(mini_list)
+            student_list.append(tuple1)
+print(student_list)
+print()
+print("List of Students with IDs:")
+for items in student_list:
 
-# student_list = []
-# mini_list = []
-# condition = True
-# Id = 1
-# while condition:
-#     user_input = input ("Please enter the student's name (or type 'stop' to finish) : ")
-#     if user_input.lower() == "stop":
-#         condition = False
-#     else:
-#         mini_list = []
-#         mini_list.append(Id)
-#         Id += 1
-#         mini_list.append(user_input)
-#         tuple1 = tuple(mini_list)
-#         student_list.append(tuple1)
+      print (f"ID: {items[0]}, Name: {items[1]}")
 
-# print()
-# print("List of Students with IDs:")
-# for items in student_list:
-#       print (f"ID: {items[0]}, Name: {items[1]}")
+print()
+# print(sum(student_list))
+total = 0
+for items in student_list:
+      total +=  1
+print(f"Total number of students  : {total}")
 
-# print()
-# total = 0
-# for items in student_list:
-#       total +=1
-# print(f"Total number of students  : {total}")
+length = 0
+for items in student_list:
+     length +=   len(items[1])
 
-# length = 0
-# for items in student_list:
-#      length =length +  len(items[1])
-
-# print(f"Total length of all student names combined: {length}")
-
-
-# longest_name_student = student_list[1]  # Start with the first student
-
-# for student in student_list:
-#     if len(student[1]) > len(longest_name_student[1]):
-#         longest_name_student = student
-
-# print(f"The student with the longest name is: {longest_name_student[1]}")
+print(f"Total length of all student names combined: {length}")
 
 
-# shortest_name_student = student_list[1]  # Start with the first student
+longest_name_student = student_list[1]  # Start with the first student
 
-# for student in student_list:
-#     if len(student[1]) < len(shortest_name_student[1]):
-#         shortest_name_student = student
+for student in student_list:
+    if len(student[1]) > len(longest_name_student[1]):
+        longest_name_student = student
 
-# print(f"The student with the shorted  name is: {longest_name_student[1]}")
+print(f"The student with the longest name is: {longest_name_student[1]}")
+
+
+shortest_name_student = student_list[1]  # Start with the first student
+
+for student in student_list:
+    if len(student[1]) < len(shortest_name_student[1]):
+        shortest_name_student = student
+
+print(f"The student with the shorted  name is: {longest_name_student[1]}")
 
