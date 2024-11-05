@@ -4,7 +4,7 @@ score = 0
 count = 0
 
 while count < 3:
-    com_num = random.randint(1, 100
+    com_num = random.randint(1, 100)
     user_num = random.randint(1, 100)
     print("Your number:", user_num)
     user_guess = input("Do you think your number is higher or lower than the computer's? (higher/lower): ").lower()
